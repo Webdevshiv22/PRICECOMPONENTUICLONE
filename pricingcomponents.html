@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+
+        .wholebody{
+            background-image: url("bg.png.jpg");
+            /* background-size: 100% 100%; */
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            position: relative;
+            
+            
+        }
+    .headprice{
+        color: purple;
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+    }
+
+    .headtitle{
+        color: purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        gap: 10px;
+    }
+
+    /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-bottom: 2px;
+  /* background-color: #2196F3; */
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+    .boxex{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .box1{
+        
+        margin: 10px;
+        padding: 10px;
+        height: 329px;
+        width: 300px;
+        border: 2px solid coral;
+        border-radius: 25px;
+        /* display: flex;
+        justify-content: center; */
+        /* align-items: center; */
+        /* box-shadow: 20px 10px purple; */
+        /* display: inline-flex; */
+    }
+    .box2{
+        /* background-color:  rgb(255, 255, 255) ; */
+        margin: 10px;
+        padding: 10px;
+        height: 329px;
+        width: 300px;
+        border: 2px solid coral;
+        border-radius: 25px;
+        z-index: 100px;
+        /* display: flex;
+        justify-content: center; */
+        /* align-items: center; */
+        /* box-shadow: 20px 10px purple; */
+        /* display: inline-flex; */
+        
+    }
+    .box3{
+        
+        margin: 10px;
+        padding: 10px;
+        height: 329px;
+        width: 300px;
+        border: 2px solid coral;
+        border-radius: 25px;
+        /* display: flex;
+        justify-content: center; */
+        /* align-items: center; */
+        /* box-shadow: 20px 10px purple; */
+        /* display: inline-flex; */
+    }
+
+    @media screen and (max-width: 724px) {
+  .boxex {
+    flex-direction: column;
+  }
+  .boxex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headprice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+    .box1{
+    height: auto;
+    width:  auto;
+  }
+  .box2{
+    height: auto;
+    width:  auto;
+  }
+  .box3{
+    height: auto;
+    width:  auto;
+  }
+}
+
+
+    .andar1{
+        color: purple;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .dollar1{
+        display: flex;
+        justify-content: center;
+        color: purple;
+    }
+    .vl1{
+        border-block-end: 2px solid white;
+        
+    }
+    .contentspace1{
+        display: flex;
+        justify-content: center;
+        color: purple;
+    }
+    .learnmore1{
+        display: flex; 
+        justify-content: center;
+        color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        /* background-color: rgb(119, 194, 247); */
+        background-color: rgb(100,149,237);
+        cursor: pointer;
+        
+    }
+
+
+    .andar2{
+        color: purple;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .dollar2{
+        display: flex;
+        justify-content: center;
+        color: purple;
+    }
+    .vl2{
+        border-block-end: 2px solid white;
+        
+    }
+    .contentspace2{
+        display: flex;
+        justify-content: center;
+        color: purple;
+    }
+    .learnmore2{
+        display: flex;
+        justify-content: center;
+        color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: rgb(100,149,237);
+        cursor: pointer;
+    }
+    
+
+
+
+    .andar3{
+        color: purple;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .dollar3{
+        display: flex;
+        justify-content: center;
+        color: purple;
+    }
+    .vl3{
+        border-block-end: 2px solid white;
+        
+    }
+    .contentspace1{
+        display: flex;
+        justify-content: center;
+        color: purple;
+    }
+    .learnmore3{
+        display: flex;
+        justify-content: center;
+        color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: rgb(100,149,237);
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+    <header class="wholebody">
+        <h3 class="headprice">
+            Our Pricing
+        </h3>
+
+        <p class="headtitle">
+            Annually   
+            <!-- Rounded switch -->
+            <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+            </label> Monthly
+        </p>
+
+        <div class="boxex">
+            <div class="box1">
+                <h3 class="andar1">Basic</h3>
+                <h1 class="dollar1">19.25</h1>
+                <div class="vl1"></div>
+                <p class="contentspace1">500 GB Storage</p>
+                <div class="vl1"></div>
+                <p class="contentspace1">2 Users Allowed</p>
+                <div class="vl1"></div>
+                <p class="contentspace1">Send upto 3 GB</p>
+                <div class="vl1"></div>
+                <p class="learnmore1">Learn More</p>
+
+            </div>
+            <div class="box2">
+                <h3 class="andar2">Proffesional</h3>
+                <h1 class="dollar2">49.25</h1>
+                <div class="vl2"></div>
+                <p class="contentspace2">1 TB Storage</p>
+                <div class="vl1"></div>
+                <p class="contentspace2">5 Users Allowed</p>
+                <div class="vl1"></div>
+                <p class="contentspace2">Send upto 10 GB</p>
+                <div class="vl1"></div>
+                <p class="learnmore2">Learn More</p>
+            </div>
+
+
+            <div class="box3">
+                <h3 class="andar3">Master</h3>
+                <h1 class="dollar3">89.25</h1>
+                <div class="vl3"></div>
+                <p class="contentspace1">2 TB Storage</p>
+                <div class="vl1"></div>
+                <p class="contentspace1">10 Users Allowed</p>
+                <div class="vl1"></div>
+                <p class="contentspace1">Send upto 20 GB</p>
+                <div class="vl1"></div>
+                <p class="learnmore3">Learn More</p>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
